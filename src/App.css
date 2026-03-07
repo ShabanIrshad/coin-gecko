@@ -15,7 +15,9 @@ body{
     width:90%;
     height:90%;
     margin:20px auto;
-    background-color:#EBD6FB;
+    /* background-color:#89D4FF; */
+    background-color:rgba(137, 212, 255,0.3);
+    
     border-radius: 15px;
     padding: 10px;
 }
@@ -32,7 +34,8 @@ table>thead>tr>th{
     border: 1px solid black;
     text-transform: uppercase;
     color: white;
-    background-color: #687FE5;
+    background-color: #FE9EC7;
+    
     padding: 8px;
 }
 .image-coin-symbol{
