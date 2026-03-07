@@ -52,7 +52,7 @@ const App = () => {
                    </div>:
         <div className="app-container">
           <div className="title-div">
-            <h2>Crypto Market📈</h2>
+            <h2 className="heading">Crypto Market📈</h2>
             <div className="search-div">
               <form onSubmit={(e) => handleSubmit(e)}>
                 <input

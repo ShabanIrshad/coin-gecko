@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-family:Arial;
+   font-family: 'Inter', sans-serif;
 }
 .aibox{
   width:100%;
@@ -15,9 +15,7 @@ body{
     width:90%;
     height:90%;
     margin:20px auto;
-    /* background-color:#89D4FF; */
-    background-color:rgba(137, 212, 255,0.3);
-    
+    background-color:rgba(137, 212, 255,0.3);    
     border-radius: 15px;
     padding: 10px;
 }
@@ -30,12 +28,19 @@ body{
 .search-div{
     float: right;
 }
+.heading{
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #2563eb;
+    border-radius: 10px;
+    background-color: white;
+}
+
 table>thead>tr>th{
     border: 1px solid black;
     text-transform: uppercase;
-    color: white;
-    background-color: #FE9EC7;
-    
+    color: white;background:#2563eb;
+    font-weight: 600;
     padding: 8px;
 }
 .image-coin-symbol{
@@ -48,8 +53,9 @@ table>thead>tr>th{
 table{
     border-collapse: collapse;
     width:100%;
-    background-color: #FEEBF6;
+    background-color: #f2f4f8;
     border-radius: 15px;
+    font-variant-numeric: tabular-nums;
 }
 .table-container{
     width:90%;
@@ -76,9 +82,9 @@ table>tbody>tr>td{
     margin: auto;
 
 }
-table>tbody>tr{
-   border-bottom:1px dashed #6367FF ;
-   height: 50px;
+
+table>tbody>tr:nth-child(odd){
+  background-color: white;
 }
 .image-coin-symbol>img{
    width: 40px;
