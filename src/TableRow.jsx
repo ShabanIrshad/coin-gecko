@@ -11,6 +11,7 @@ const TableRow=({data})=>{
             return num.toLocaleString();
         }
     }
+    console.log(data);
     return(
         <>        
             <tr>
@@ -24,11 +25,13 @@ const TableRow=({data})=>{
                     
                 </td>
                 <td>
-                    
-                    <div className="price-change" style={data.price_change_percentage_24h<0?{color:'#dd1111'}:{color:'#0b8317'}}>
+                    {data.price_change_percentage_24h!==null &&
+                         <div className="price-change" style={data.price_change_percentage_24h<0?{color:'#dd1111'}:{color:'#0b8317'}}>
                         <p> {data.price_change_percentage_24h>=0?<b>⬆&nbsp;{"( "+data.price_change_percentage_24h.toFixed(2)+"% )"}</b>:<b>⬇&nbsp;{"( "+data.price_change_percentage_24h.toFixed(2)+"% )"}</b>}</p>
                         <p>{data.price_change_24h.toFixed(3)+"$"}</p>
                     </div>
+                    }
+                   
                 </td>
                 <td>{data.low_24h.toFixed(2)+" "}<b>/</b>{" "+data.high_24h.toFixed(2)}</td>
                 <td><b>{"$"+data.current_price}</b></td>
